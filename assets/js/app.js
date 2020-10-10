@@ -68,12 +68,13 @@ var svgWidth = 600;
       .attr("y", d => yLinearScale(d.healthcare-.25))
       .text(d => d.abbr)
       .attr("class", "stateText");
-
-     //  x and y axes labels
+      
       chartGroup.append("text")
       .attr("transform", `translate(300, 540)`)
       .attr("class", "aText")
       .text("Poverty (%)");
+      
+      
       chartGroup.append("text")
       .attr("transform", `translate(-35, 200)rotate(270)`)
       .attr("class", "aText")
